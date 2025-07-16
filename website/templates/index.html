@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>people</h1>
+    {% for data in people:%}
+    <p>{{data[0]}} - {{data[2]}}</p>
+    <img src="img/{{data[0]}}">
+    {% endfor %}
+
+    <h1>currently in</h1>
+    {% for data in currently_in%}
+    <p>{{data[0]}} - {{data[1]}}</p>
+    {% endfor %}
+
+    <h1>times in</h1>
+    {% for data in times_in%}
+    <p>{{data[0]}} - {{data[1]}} - {{data[2]}}</p>
+    {% endfor %}
+</body>
+</html>
